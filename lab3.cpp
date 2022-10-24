@@ -5,9 +5,7 @@ void bestFit(int blockSize[], int m, int processSize[], int n)
 {
    
     int allocation[n];
-
     memset(allocation, -1, sizeof(allocation));
-
     for (int i=0; i<n; i++)
     {
         int bestIdx = -1;
@@ -21,7 +19,6 @@ void bestFit(int blockSize[], int m, int processSize[], int n)
                     bestIdx = j;
             }
         }
-
         
         if (bestIdx != -1)
         {
@@ -49,12 +46,8 @@ void firstFit(int blockSize[], int m,
               int processSize[], int n)
 {
     
-    int allocation[n];
- 
-    
-    memset(allocation, -1, sizeof(allocation));
- 
-    
+    int allocation[n];    
+    memset(allocation, -1, sizeof(allocation));    
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < m; j++)
@@ -91,11 +84,8 @@ void firstFit(int blockSize[], int m,
 void nextFit(int blockSize[], int m, int processSize[], int n)
 {
     
-    int allocation[n], j = 0;
- 
-    
-    memset(allocation, -1, sizeof(allocation));
- 
+    int allocation[n], j = 0;    
+    memset(allocation, -1, sizeof(allocation)); 
     for (int i = 0; i < n; i++) {
  
        
@@ -130,16 +120,11 @@ void nextFit(int blockSize[], int m, int processSize[], int n)
 }
 
 
-void worstFit(int blockSize[], int m, int processSize[],
-                                                 int n)
+void worstFit(int blockSize[], int m, int processSize[],int n)
 {
     
-    int allocation[n];
- 
-    
-    memset(allocation, -1, sizeof(allocation));
- 
-   
+    int allocation[n];    
+    memset(allocation, -1, sizeof(allocation));   
     for (int i=0; i<n; i++)
     {
         
