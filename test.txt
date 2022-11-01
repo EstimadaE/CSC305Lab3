@@ -1,6 +1,0 @@
-nextFit(blockSize, m, processSize, n);
-worstFit(blockSize, m, processSize, n);
-
- bestFit(blockSize, m, processSize, n);
-    firstFit(blockSize, m, processSize, n);
-    
